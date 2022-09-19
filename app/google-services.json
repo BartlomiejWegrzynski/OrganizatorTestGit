@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "602901018583",
+    "firebase_url": "https://organizerbw-83c65-default-rtdb.firebaseio.com",
+    "project_id": "organizerbw-83c65",
+    "storage_bucket": "organizerbw-83c65.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602901018583:android:90eace176c23dc0c823d92",
+        "android_client_info": {
+          "package_name": "com.example.organizer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602901018583-1o2hejnri6rvg0c1tm2dgq5njutj5rvc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYYi5UMclg2dES9fMMFeAhTDTtd6IEd3E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602901018583-1o2hejnri6rvg0c1tm2dgq5njutj5rvc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

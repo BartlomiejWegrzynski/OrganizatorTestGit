@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".plan_dnia">
+
+
+    <Button
+        android:id="@+id/button_wstecz_plan_dnia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Wstecz"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView_plan_dnia" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_plan_dnia"
+        android:layout_width="411dp"
+        android:layout_height="520dp"
+        android:layout_marginTop="100dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/addImg_plan_dnia"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/addcircle"
+        app:layout_constraintCircleRadius="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView_plan_dnia" />
+
+    <TextView
+        android:id="@+id/textViewIDuzyt_plan_dnia"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:minHeight="50dp"
+        android:text="Id Użytkownika"
+        app:layout_constraintEnd_toStartOf="@+id/addImg_plan_dnia"
+        app:layout_constraintStart_toEndOf="@+id/button_wstecz_plan_dnia"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView_plan_dnia" />
+
+    <TextView
+        android:id="@+id/textViewDataPlanDnia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="24.02.2020"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView_plan_dnia"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewArrowRight"
+        app:layout_constraintStart_toEndOf="@+id/imageViewArrowLeft"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewArrowLeft"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView_plan_dnia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow_left" />
+
+    <ImageView
+        android:id="@+id/imageViewArrowRight"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView_plan_dnia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow_right" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

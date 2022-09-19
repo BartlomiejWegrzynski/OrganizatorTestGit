@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:id="@+id/imageViewProfilMain"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/imgfaceproifllnone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBaner"></ImageView>
+
+
+    <Button
+        android:id="@+id/plan_dnia_btn"
+        android:layout_width="360dp"
+        android:layout_height="70dp"
+        android:text="Plan Dnia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fullName"
+        android:layout_marginTop="10dp"
+        ></Button>
+
+    <Button
+        android:id="@+id/signOut"
+        android:layout_width="360dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="154dp"
+        android:layout_marginEnd="163dp"
+        android:text="Logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/finanseProfilMain" />
+
+
+    <Button
+        android:id="@+id/btnListaNotatek"
+        android:layout_width="360dp"
+        android:layout_height="70dp"
+
+        android:text="Lista Notatek"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plan_dnia_btn" />
+
+    <Button
+        android:id="@+id/przyjacieleBtn"
+        android:layout_width="360dp"
+        android:layout_height="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnListaNotatek"
+        android:text="Przyjaciele"
+        ></Button>
+
+    <Button
+        android:id="@+id/finanseProfilMain"
+        android:layout_width="360dp"
+        android:layout_height="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/przyjacieleBtn"
+        android:text="Finanse"
+        ></Button>
+
+
+
+
+
+    <TextView
+        android:id="@+id/fullName"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:hint="Nazwa uzytkowniak"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewProfilMain" />
+
+    <TextView
+        android:id="@+id/topBaner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Profil Powitalny"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

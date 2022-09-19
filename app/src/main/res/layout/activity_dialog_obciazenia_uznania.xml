@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".DialogObciazeniaUznania">
+
+    <EditText
+        android:gravity="center"
+        android:id="@+id/editDialogWydatkiKwota"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/white"
+        android:textColorHint="@color/black"
+        android:hint="0"
+        android:minHeight="50dp"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editDialogWydatkiTextDialog"
+        app:layout_constraintTop_toTopOf="parent"></EditText>
+
+    <EditText
+        android:paddingLeft="10dp"
+        android:id="@+id/editDialogWydatkiTextDialog"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:hint="Podaj tytuł uznania/obciążenia"
+        android:minHeight="50dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/editDialogWydatkiKwota"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></EditText>
+
+    <Button
+        android:id="@+id/btnDialogWydatkiCancelDialog"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Cancel"
+        app:layout_constraintEnd_toStartOf="@+id/btnDialogWydatkiOkDialog"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editDialogWydatkiTextDialog" />
+
+    <Button
+        android:id="@+id/btnDialogWydatkiOkDialog"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:text="OK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnDialogWydatkiCancelDialog"
+        app:layout_constraintTop_toBottomOf="@+id/editDialogWydatkiTextDialog" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

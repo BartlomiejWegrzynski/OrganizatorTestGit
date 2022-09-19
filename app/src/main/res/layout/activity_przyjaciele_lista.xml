@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".przyjacieleLista">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewPrzyjaciele"
+        android:layout_width="411dp"
+        android:layout_height="670dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_wstecz_Przyjaciele"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="120dp"
+        android:text="Wstecz"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/addImgPrzyjaciel"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/addcircle"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintCircleRadius="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.974"
+        app:layout_constraintStart_toEndOf="@+id/button_wstecz_Przyjaciele" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/textViewIDuzytprzyjacielelista"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:text="Id Użytkownika"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/addImgPrzyjaciel"
+        app:layout_constraintStart_toEndOf="@+id/button_wstecz_Przyjaciele" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

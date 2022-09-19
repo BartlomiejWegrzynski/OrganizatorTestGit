@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FinanseProfil">
+
+
+    <Button
+        android:id="@+id/finanse_profil_oczekujace_btn"
+        android:layout_width="360dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="50dp"
+        android:text="Oczekujące"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/finanse_profil_idUser"></Button>
+
+
+    <Button
+        android:id="@+id/finanse_profil_historia_wydatków"
+        android:layout_width="360dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:text="Historia Wydatków"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/finanse_profil_oczekujace_btn"></Button>
+
+
+    <Button
+        android:id="@+id/finanse_profil_powrot_btn"
+        android:layout_width="360dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:text="Powrót"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/finanse_profil_historia_wydatków"></Button>
+
+
+    <TextView
+
+        android:id="@+id/finanse_profil_baner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Finanse"
+        android:textSize="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewProfilPrzyjaciel"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/finanse_profil_baner"
+        android:src="@drawable/imgfaceproifllnone"></ImageView>
+
+    <TextView
+        android:textSize="18dp"
+        android:id="@+id/finanse_profil_nazwauser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Nazwa Uzytkownika"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewProfilPrzyjaciel" />
+
+    <TextView
+        android:textSize="18dp"
+        android:id="@+id/finanse_profil_idUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="ID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/finanse_profil_nazwauser" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

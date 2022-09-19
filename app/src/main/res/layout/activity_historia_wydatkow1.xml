@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Historia_Wydatkow1">
+
+    <Button
+        android:id="@+id/button_wstecz_historia_wydatkow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Wstecz"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView_historia_wydatkow" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_historia_wydatkow"
+        android:layout_width="411dp"
+        android:layout_height="520dp"
+        android:layout_marginTop="100dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textViewIDuzyt_histoira_wydatkow"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:minHeight="50dp"
+        android:text="Id Użytkownika"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_wstecz_historia_wydatkow"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView_historia_wydatkow" />
+
+    <TextView
+        android:id="@+id/textViewNaglowek_historia_wydatkow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Historia Wydatków"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView_historia_wydatkow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
