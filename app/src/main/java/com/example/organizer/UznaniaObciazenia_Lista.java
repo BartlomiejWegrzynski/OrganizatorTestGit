@@ -133,7 +133,8 @@ public class UznaniaObciazenia_Lista extends AppCompatActivity implements Adapte
             public void onClick(View view) {
 
                 if (FlagaEdycji)
-                    startActivity(new Intent(UznaniaObciazenia_Lista.this,ProfileActivity.class));
+                    //startActivity(new Intent(UznaniaObciazenia_Lista.this,ProfileActivity.class));
+                    startActivity(new Intent(UznaniaObciazenia_Lista.this,FinanseProfil.class));
                 else
                 {
                     openActivityProfilPrzyjaciela(userIDPodane);

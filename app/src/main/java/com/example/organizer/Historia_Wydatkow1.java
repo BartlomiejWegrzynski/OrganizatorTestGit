@@ -80,10 +80,13 @@ public class Historia_Wydatkow1 extends AppCompatActivity implements AdapterObci
 
 
                 if (FlagaEdycji)
-                    startActivity(new Intent(Historia_Wydatkow1.this,ProfileActivity.class));
+                    //startActivity(new Intent(Historia_Wydatkow1.this,ProfileActivity.class));
+                    startActivity(new Intent(Historia_Wydatkow1.this,FinanseProfil.class));
                 else
                 {
                     openActivityProfilPrzyjaciela(userIDPodane);
+
+
                 }
 
             }
