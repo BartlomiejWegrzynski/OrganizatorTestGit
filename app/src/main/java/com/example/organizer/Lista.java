@@ -191,7 +191,7 @@ public class Lista extends AppCompatActivity implements AdapterLista.ViewHolderL
         super.onStart();
 
 
-        userNoteRef.addSnapshotListener(this, new EventListener<QuerySnapshot>() {
+        userNoteRef.orderBy("tekst1").addSnapshotListener(this, new EventListener<QuerySnapshot>() {
             @Override
 
             public void onEvent(@Nullable QuerySnapshot queryDocumentSnapshots, @Nullable FirebaseFirestoreException error) {

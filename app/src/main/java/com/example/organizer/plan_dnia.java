@@ -173,6 +173,8 @@ public class plan_dnia extends AppCompatActivity implements  AdapterPlanDnia.Vie
             userNoteRef2 = db.collection(userIDPodane).document("PlanyDnia").collection(data).document(documentId);
             userNoteRef2.delete();
             ladowanieDanych();
+            adapterPlanDnia.notifyDataSetChanged();
+
 
 
 
@@ -190,9 +192,9 @@ public class plan_dnia extends AppCompatActivity implements  AdapterPlanDnia.Vie
         recyclerViewPlanDnia.setLayoutManager(layoutManagerPlanDnia);
         adapterPlanDnia = new AdapterPlanDnia(modelPlanDniaList,this);
         recyclerViewPlanDnia.setAdapter(adapterPlanDnia);
-        adapterPlanDnia.notifyDataSetChanged();
-        if (FlagaEdycji)
+        if (!FlagaEdycji)
             new ItemTouchHelper(itemTouchHelperCallback).attachToRecyclerView(recyclerViewPlanDnia);
+        adapterPlanDnia.notifyDataSetChanged();
 
 
     }
@@ -251,6 +253,8 @@ public class plan_dnia extends AppCompatActivity implements  AdapterPlanDnia.Vie
         }
         else
         {
+            if (zmiennagodzina.length()==1)
+                zmiennagodzina="0"+zmiennagodzina;
             ModelPlanDnia pomocniczaPlanDnia = new ModelPlanDnia(zmiennaTresc,zmiennagodzina,zmiennaminuta);
             userNoteRef.add(pomocniczaPlanDnia);
             ladowanieDanych();
@@ -298,7 +302,6 @@ public class plan_dnia extends AppCompatActivity implements  AdapterPlanDnia.Vie
                     String minuta = modelPlanDnia.getMinutaplanudnia();
 
                     modelPlanDniaList.add(new ModelListaPlanDnia(new ModelPlanDnia(tresc,godzina,minuta),idWpisuPlanuDnia));
-
 
 
                 }
